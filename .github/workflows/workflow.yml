@@ -42,7 +42,7 @@ jobs:
         continue-on-error: true
         run: flake8 . --exit-zero --max-complexity=10 --statistics
 
-      - name: Test with python
+      - name: Test with pytest python
         run: |
           pytest
 
